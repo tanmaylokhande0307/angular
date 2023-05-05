@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let product of productsData">
+      <div class="card h-100">
+        <img class="card-img-top img-fluid" [src]="product.image" alt="{{ product.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <div class="d-flex justify-content-between">
+            <div class="rating">
+              <span class="star" *ngFor="let rating of product.ratings">
+                <i class="fa fa-star" [class.fa-star-o]="rating == 0"></i>
+              </span>
+            </div>
+            <h6 class="price">$ {{ product.price }}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

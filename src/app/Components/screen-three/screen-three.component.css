@@ -1,0 +1,25 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.container{
+  padding: 50px;
+  align-items: center;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}

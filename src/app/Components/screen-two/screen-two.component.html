@@ -1,0 +1,5 @@
+<div class= "card-container" *ngIf="categoryData">
+  <div class="card" *ngFor="let step of categoryData; index as i">
+    <h3 class="card-title">{{ categoryData[i] }}</h3>
+  </div>
+</div>
